@@ -1,0 +1,23 @@
+homepage ma bhako sidebar haru sab hatauney.
+
+top-header ma arko euta menu. 
+
+all department collapse layout - 1
+
+second header ko searchlai navigation mai. plus header ma address or others
+
+product listing pani change garna paryo
+
+https://demo.lion-themes.net/amera/home-shop-2/ header-2 example
+
+product category layout
+
+
+https://demo.lion-themes.net/amera/home-shop-3/?demo=3
+
+https://live.hasthemes.com/html/5/rozer-preview/rozer/index-2.html
+
+text header ecilips
+
+
+icon changes

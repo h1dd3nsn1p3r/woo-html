@@ -965,11 +965,6 @@ mobile navigation css
 	position: fixed;
 	top: 0;
 	height: 100vh;
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(247, 116, 38, 0.9) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247, 116, 38, 0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(247, 116, 38, 0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F77426',GradientType=0 ); /* IE6-9 */
 	z-index: 10000;
 	width: 350px;
 	box-shadow: 0 3px 15px #33333354;
@@ -990,6 +985,7 @@ mobile navigation css
     -o-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     -ms-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     overflow: auto;
+    background: #fff;
 }
 body.category-on .mob-category,
 body.mob-menu-on .mob-menu {
@@ -1069,10 +1065,10 @@ body.mob-menu-on .cat-overlay {
 }
 .mob-menu .sub-toggle {
 	position: absolute;
-	top: 12px;
-	right: 15px;
-	font-size: 18px;
-	cursor: pointer;
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+    cursor: pointer;
 }
 .mob-menu .mega-sec,
 .mob-menu ul.sub-menu {
@@ -1094,9 +1090,6 @@ body.mob-menu-on .cat-overlay {
 /*============================================================================================================================
 page-template css according to menu bar
 ============================================================================================================================*/
-.page-template .category-nav {
-	display: none;
-} 
 .full-width-breadcrumb {
 	padding: 70px 0;
     background: #fff;
@@ -1251,6 +1244,10 @@ grid-list css
 }
 .blog-posts.grid-list .blog-content .user-section {
 	margin-top: 0;
+}
+.blog-posts.grid-list .blog-content .user-section .user-img {
+	width: 58px;
+	height: 58px;
 }
 /*============================================================================================================================
 pagination, tag, and social share css
@@ -1669,15 +1666,15 @@ pagination, tag, and social share css
 /*============================================================================================================================
 aside css
 ============================================================================================================================*/
-.product-Cwrap-slide.toparrown .owl-nav {
+.toparrown .owl-nav {
 	position: absolute;
 	right: 0;
 	top: -60px;
 }
-.product-Cwrap-slide .owl-nav {
+.toparrown .owl-nav {
 	display: block !important;
 }
-.product-Cwrap-slide .owl-nav button {
+.toparrown .owl-nav button {
 	width: 30px;
     height: 30px;
     color: #fff !important;
@@ -1687,10 +1684,10 @@ aside css
     -webkit-transition: all ease 0.3s;
     margin-left: 5px;
 }
-.product-Cwrap-slide .owl-nav button:hover {
+.toparrown .owl-nav button:hover {
 	background: #ea5700 !important;
 }
-.product-Cwrap-slide .owl-nav button span {
+.toparrown .owl-nav button span {
 	font-size: 30px;
     line-height: 0.8;
 }
@@ -1701,10 +1698,14 @@ aside css
     box-shadow: 0 0 12px #e2e2e2;
     -webkit-box-shadow: 0 0 12px #e2e2e2;
 }
-.product-count-down.horizontal .img-holder,
+.product-count-down.horizontal .img-holder {
+	float: left;
+	width: 40%;
+	overflow: hidden;
+}
 .product-count-down.horizontal .text-holder {
 	float: left;
-	width: 50%;
+	width: 60%;
 	overflow: hidden;
 }
 .product-Cwrap .img-holder {
@@ -2052,6 +2053,7 @@ woocommerce css
     flex: 0 0 25%;
     max-width: 25%;
 }
+
 .woocommerce-page ul.products li.product, 
 .woocommerce ul.products li, 
 .woocommerce ul.products li.product {

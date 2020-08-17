@@ -26,8 +26,8 @@ $(document).ready(function() {
     /*sub toggle js*/
 
 
-    $('.mob-menu .main-navigation li.has-sub-menu').append('<span class="sub-toggle"> <i class="fa fa-angle-down"></i> </span>');
-    $('.mob-menu .main-navigation .mega-menu .mega-sec').append('<span class="sub-toggle"> <i class="fa fa-angle-down"></i> </span>');
+    $('.mob-menu .main-navigation li.has-sub-menu').append('<span class="sub-toggle"> <i class="icon-arrow-down"></i> </span>');
+    $('.mob-menu .main-navigation .mega-menu .mega-sec').append('<span class="sub-toggle"> <i class="icon-arrow-down"></i> </span>');
 
 
     $('.mob-menu .sub-toggle').on('click', function() {
@@ -42,11 +42,11 @@ $(document).ready(function() {
 
         if($(this).hasClass('active-submenu')) {
 
-            $(this).find('.fa').removeClass('fa-angle-down').addClass('fa-angle-up');
+            $(this).find('.icon-arrow-down').removeClass('icon-arrow-down').addClass('icon-arrow-up');
 
         } else {
 
-            $(this).find('.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
+            $(this).find('.icon-arrow-up').removeClass('icon-arrow-up').addClass('icon-arrow-down');
         }
 
     });
@@ -55,7 +55,7 @@ $(document).ready(function() {
     /*cat toggle js*/
 
     $( ".category-header" ).click(function() {
-      $( ".category-nav" ).fadeToggle( "fast", "linear" );
+      $( ".header .category-nav" ).fadeToggle( "fast", "linear" );
     });
 
 
@@ -157,6 +157,37 @@ $(document).ready(function() {
         autoplay: true,
         dots: false,
         nav: true,
+        responsive: {
+            0:{
+                items:1,
+            },
+            560:{
+                items:1,
+            },
+            768:{
+                items:2,
+            },
+            1100: {
+                items:3,
+            }
+        }
+    });
+
+    $(".product-Cwrap-slide-horizontal").owlCarousel({
+        loop:true,
+        margin:30,
+        items:2,
+        autoplay: true,
+        dots: false,
+        nav: true,
+        responsive: {
+            0:{
+                items:1,
+            },
+            1100: {
+                items:2,
+            }
+        }
     });
     
 

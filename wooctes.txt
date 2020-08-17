@@ -1,0 +1,36 @@
+<div class="offer section_padd60">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="offer-section">
+							<img src="images/offer-img-2.jpg" alt="images">
+							<div class="text-holder">
+								<span class="text">Don't miss today</span>
+								<span class="discount-text">50% off</span>
+								<a href="#" class="bg-button">shop now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="offer-section">
+							<img src="images/offer-img-1.jpg" alt="images">
+							<div class="text-holder">
+								<span class="text">Don't miss today</span>
+								<span class="discount-text">50% off</span>
+								<a href="#" class="bg-button">shop now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="offer-section">
+							<img src="images/offer-img-3.jpg" alt="images">
+							<div class="text-holder">
+								<span class="text">Don't miss today</span>
+								<span class="discount-text">50% off</span>
+								<a href="#" class="bg-button">shop now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

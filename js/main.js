@@ -189,6 +189,23 @@ $(document).ready(function() {
             }
         }
     });
+
+
+    $(".tab-carousel").owlCarousel({
+        loop:true,
+        margin:30,
+        items:2,
+        autoplay: true,
+        nav: true,
+        responsive: {
+            0:{
+                items:1,
+            },
+            1100: {
+                items:3,
+            }
+        }
+    });
     
 
 

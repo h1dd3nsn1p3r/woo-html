@@ -2182,3 +2182,47 @@ tab
 .tab-wrapper .tab-nav ul li a:hover:before {
 	background: #F77426;
 }
+
+
+/*============================================================================================================================
+mini cart css
+============================================================================================================================*/ 
+.mini-cart {
+	position: relative;
+}
+
+.mini-cart-content {
+    margin: 0;
+    width: 350px;
+    top: 60px;
+    left: auto;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001;
+    text-align: left;
+    padding-top: 5px;
+    background: #fff;
+    box-shadow: 0 0 3.76px 0.24px rgba(0,0,0,.15);
+    padding: 20px;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: center top 0;
+    -ms-transform-origin: center top 0;
+    transform-origin: center top 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    font-size: 15px;
+    line-height: 1.1;
+}
+.mini-cart-content p {
+	margin-bottom: 0;
+}
+.mini-cart-content.cart-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}

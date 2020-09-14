@@ -76,6 +76,9 @@
 	.header-address {
 		display: none;
 	}
+	.mini-cart-content {
+		right: -29px;
+	}
 }
 @media (max-width: 1024px) {
 	.container {
@@ -179,6 +182,7 @@
 	.single-prod-detail .content-imagin {
 		display: none;
 	}
+
 }
 
 @media (max-width: 640px) {

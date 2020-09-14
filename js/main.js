@@ -246,4 +246,11 @@ $(document).ready(function() {
 
     });
 
+    /*===================================
+    cart toggle     
+    ====================================*/
+    
+    $(".mini-cart").click(function(){
+      $(".mini-cart-content").toggleClass("cart-visible");
+    });
 });

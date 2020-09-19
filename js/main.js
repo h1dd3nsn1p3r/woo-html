@@ -7,19 +7,29 @@ $(document).ready(function() {
         $('body').toggleClass('category-on'); // add class to body
     });
 
-    $('body').on('click', '.cat-overlay, .mob-category .close', function(e){
-
-        $('body').removeClass('category-on'); // remove class from body
-    });
-
     $('body').on('click', '.togMenu', function(e){
 
         $('body').toggleClass('mob-menu-on'); // add class to body
     });
 
+    $('body').on('click', '.list-product .quick-view', function(e){
+
+        $('body').toggleClass('quick-pop'); // add class to body
+    });
+
     $('body').on('click', '.cat-overlay, .mob-menu .close', function(e){
 
         $('body').removeClass('mob-menu-on'); // remove class from body
+    });
+
+    $('body').on('click', '.cat-overlay, .mob-category .close', function(e){
+
+        $('body').removeClass('category-on'); // remove class from body
+    });
+
+    $('body').on('click', '.cat-overlay, .quick-view-pop .quick-close', function(e){
+
+        $('body').removeClass('quick-pop'); // remove class from body
     });
 
    

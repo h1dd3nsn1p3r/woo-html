@@ -197,6 +197,7 @@ $(document).ready(function() {
         items:2,
         autoplay: true,
         nav: true,
+        dots: false,
         responsive: {
             0:{
                 items:1,
@@ -269,5 +270,21 @@ $(document).ready(function() {
     
     $(".mini-cart").click(function(){
       $(".mini-cart-content").toggleClass("cart-visible");
+    });
+
+
+    $(".rating").starRating({
+      totalStars: 5,
+      emptyColor: 'lightgray',
+      hoverColor: '#fdd835',
+      activeColor: '#fdd835',
+      initialRating: 4,
+      strokeWidth: 0,
+      useGradient: false,
+      minRating: 1,
+      callback: function(currentRating, $el){
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+      }
     });
 });

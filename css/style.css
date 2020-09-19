@@ -1114,12 +1114,13 @@ page-template css according to menu bar
     color: #F77426;
 }
 .breadcrumb-links li a:before {
-	content: '\f105';
-	position: absolute;
-	right: 2px;
-	top: -2px;
-	font-family: "Font Awesome 5 Free"; 
-	font-weight: 900; 
+	content: '\e606';
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    font-family: "simple-line-icons";
+    font-weight: 900;
+    font-size: 11px;
 }
 
 
@@ -1278,7 +1279,7 @@ pagination, tag, and social share css
     border-radius: 100%;
     text-align: center;
     vertical-align: top;
-    line-height: 41px;
+    line-height: 43px;
 }
 .pagination ul li a:hover {
 	background: #F77426;
@@ -1365,17 +1366,18 @@ pagination, tag, and social share css
 	text-align: center;
 }
 .page-404 .text-holder span {
-	font-size: 26px;
+	font-size: 50px;
     line-height: 1;
+    font-weight: 600;
 }
 .page-404 .text-holder h1 {
-	font-weight: 600;
-    font-size: 43px;
+	font-weight: 400;
+    font-size: 29px;
     margin: 15px 0;
 }
 .page-404 .text-holder h2 {
 	font-weight: 400;
-    font-size: 39px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 .page-404 .text-holder form {
